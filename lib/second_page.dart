@@ -47,7 +47,7 @@ class BuyNowPage extends StatelessWidget {
                 children: [
                   ElevatedButton.icon(
                       onPressed: () {
-
+                        print('Successful - Master Card');
                       },
                       icon: Image.network(
                         'https://purepng.com/public/uploads/large/purepng.com-mastercard-logologobrand-logoiconslogos-251519938372dnf77.png',
@@ -62,6 +62,7 @@ class BuyNowPage extends StatelessWidget {
                   SizedBox(height: 10),
                   ElevatedButton.icon(
                       onPressed: () {
+                        print('Successful - Bkash');
 
                       },
                       icon: Image.network(
@@ -77,6 +78,7 @@ class BuyNowPage extends StatelessWidget {
                   SizedBox(height: 10),
                   ElevatedButton.icon(
                       onPressed: () {
+                        print('Successful - Nagad');
 
                       },
                       icon: Image.network(
@@ -92,6 +94,7 @@ class BuyNowPage extends StatelessWidget {
                   SizedBox(height: 10),
                   ElevatedButton.icon(
                       onPressed: () {
+                        print('Successful - Rocket');
 
                       },
                       icon: Image.network(
