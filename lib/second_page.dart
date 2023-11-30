@@ -78,7 +78,7 @@ class BuyNowPage extends StatelessWidget {
                   SizedBox(height: 10),
                   ElevatedButton.icon(
                       onPressed: () {
-                        print('Successful - Nagad');
+                        _showSnackBar(context, 'Successful - Nagad');
 
                       },
                       icon: Image.network(
@@ -122,5 +122,12 @@ class BuyNowPage extends StatelessWidget {
       ),
     );
   }
+}
+void _showSnackBar(BuildContext context, String message) {
+  final snackBar = SnackBar(
+    content: Text(message),
+    duration: Duration(seconds: 2), // Adjust the duration as needed
+  );
+  ScaffoldMessenger.of(context).showSnackBar(snackBar);
 }
 
