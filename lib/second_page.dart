@@ -47,7 +47,7 @@ class BuyNowPage extends StatelessWidget {
                 children: [
                   ElevatedButton.icon(
                       onPressed: () {
-                        _showSnackBar(context, 'Successful - Nagad');
+                        _showSnackBar(context, 'Successful - Master card');
                       },
                       icon: Image.network(
                         'https://purepng.com/public/uploads/large/purepng.com-mastercard-logologobrand-logoiconslogos-251519938372dnf77.png',
