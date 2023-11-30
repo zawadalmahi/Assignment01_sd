@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-//import 'second_page.dart';
+import 'second_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -80,6 +80,15 @@ class ProductDetailsPage extends StatelessWidget {
                 style: TextStyle(fontSize: 16),
               ),
               SizedBox(height: 20),
+              ElevatedButton(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => BuyNowPage()),
+                  );
+                },
+                child: Text('Buy Now'),
+              ),
 
             ],
           ),
